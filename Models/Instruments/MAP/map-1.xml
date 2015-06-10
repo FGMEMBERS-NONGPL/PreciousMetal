@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 
-<!-- manifold pressure, engine #1, by Dave Culp -->
+<!-- manifold pressure, 120 in max, by Dave Culp -->
 
 <PropertyList>
 
@@ -22,7 +22,7 @@
   <type>rotate</type>
   <object-name>needle</object-name>
   <property>engines/engine[0]/mp-inhg</property>
-  <factor>4.5</factor>
+  <factor>2.25</factor>
   <center>
    <x-m>-0.015</x-m>
    <y-m>0</y-m>

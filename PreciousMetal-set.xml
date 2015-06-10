@@ -1,5 +1,11 @@
 <?xml version="1.0"?>
 
+
+<!-- License:  Creative Commons, CC-BY-NC-SA   -->
+<!-- Author:   David Culp                      -->
+<!-- Email:    daveculp@cox.net                -->
+
+
 <PropertyList>
 
  <sim>
@@ -29,9 +35,9 @@
    <internal archive="y">true</internal>
    <config>
     <pitch-offset-deg>-4.5</pitch-offset-deg>
-    <x-offset-m archive="y">0.0</x-offset-m><!-- right/left -->
-    <y-offset-m archive="y">0.7</y-offset-m><!-- up/down -->
-    <z-offset-m archive="y">1.4</z-offset-m><!-- aft/fore -->
+    <x-offset-m archive="y"> 0.0</x-offset-m><!-- right/left -->
+    <y-offset-m archive="y"> 0.7</y-offset-m><!-- up/down -->
+    <z-offset-m archive="y">1.35</z-offset-m><!-- aft/fore -->
    </config>
   </view>
 
@@ -70,7 +76,7 @@
   <engines>
    <engine n="0">
     <magnetos>3</magnetos>
-    <propeller-pitch>1.0</propeller-pitch>
+    <propeller-pitch>0.0</propeller-pitch>
     <mixture>1.0</mixture>
    </engine>
   </engines>
@@ -80,8 +86,8 @@
   <flight>  
    <flaps>0</flaps>
    <elevator-trim>-0.16</elevator-trim>
-   <rudder-trim>-0.01</rudder-trim>
-   <aileron-trim>-0.01</aileron-trim>
+   <rudder-trim>0.00</rudder-trim>
+   <aileron-trim>0.00</aileron-trim>
   </flight>
   <gear>
     <brake-parking type="double">1.0</brake-parking>
@@ -150,6 +156,11 @@
  </fdm>
 
  <instrumentation>
+  <transponder>
+    <serviceable>true</serviceable>
+    <id-code>1200</id-code>
+    <mode-switch>4</mode-switch>
+  </transponder>
   <marker-beacon>
     <volume type="double" archive="y">0.0</volume>
   </marker-beacon>

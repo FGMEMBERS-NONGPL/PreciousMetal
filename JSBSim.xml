@@ -8,7 +8,7 @@
   <author> Aeromatic v 0.9, David Culp </author>
   <filecreationdate> now </filecreationdate>
   <version> 0.0 </version>
-  <description> Models a Hawker SeaFury. </description>
+  <description> Models a Mustang-based racer. </description>
  </fileheader>
 
 <!-- Adapted from the FW-190 flight model -->
@@ -115,7 +115,7 @@
    <location unit="IN">
      <x> 385.00 </x>
      <y>   0.00 </y>
-     <z> -37.00 </z>
+     <z> -36.00 </z>
    </location>
    <static_friction>  0.80 </static_friction>
    <dynamic_friction> 0.50 </dynamic_friction>
@@ -156,7 +156,7 @@
 
  <propulsion>
 
-   <engine file="centaurus">
+   <engine file="griffon">
     <location unit="IN">
       <x>  36.00 </x>
       <y>   0.00 </y>
@@ -164,7 +164,7 @@
     </location>
     <feed>0</feed>
     <feed>1</feed>
-    <thruster file="prop">
+    <thruster file="prop2">
      <location unit="IN">
        <x>  12.00 </x>
        <y>   0.00 </y>
@@ -246,7 +246,7 @@
             <tableData>
               -0.20 -0.630
                0.00  0.250
-               0.23  1.200
+               0.23  1.100
                0.26  0.682
             </tableData>
           </table>
@@ -294,9 +294,9 @@
             <independentVar lookup="row">aero/alpha-rad</independentVar>
             <tableData>
              -1.57    1.500
-             -0.26    0.022
+             -0.26    0.021
               0.00    0.018
-              0.26    0.022
+              0.26    0.021
               1.57    1.500
             </tableData>
           </table>
@@ -309,7 +309,7 @@
            <property>aero/qbar-psf</property>
            <property>metrics/Sw-sqft</property>
            <property>aero/cl-squared</property>
-           <value>0.07</value>
+           <value>0.06</value>
          </product>
     </function>
 
@@ -322,7 +322,7 @@
             <independentVar lookup="row">velocities/mach</independentVar>
             <tableData>
                 0.00      0.000
-                0.70      0.000
+                0.76      0.000
                 1.10      0.023
                 1.80      0.015
             </tableData>
@@ -453,6 +453,13 @@
        </product>
     </function>
 
+    <function name="aero/moments/Mlprop">
+       <description>HACK_Roll_moment_countering_prop_torque</description>
+       <product>
+           <property>moments/l-prop-lbsft</property>
+           <value>-1.0</value>
+       </product>
+    </function>
 
   </axis>
 

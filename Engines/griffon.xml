@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!--
+  A Rolls-Royce Griffon engine of various marks, modified for racing at Reno.
+  Boost is increased for low-altitude running, and rpm increased to 3200.
+-->
+
+<piston_engine name="centaurus">
+  <displacement unit="IN3"> 2240.00 </displacement>
+  <maxmp unit="INHG">  100.0 </maxmp>
+  <bore unit="IN"> 6.00 </bore>
+  <stroke unit="IN"> 6.60 </stroke>
+  <bsfc>           0.4 </bsfc>
+  <maxhp>        2400.00 </maxhp>
+  <compression-ratio> 6.0 </compression-ratio>  
+  <volumetric-efficiency>     0.775  </volumetric-efficiency>  
+  <cycles>         4.0 </cycles>
+  <cylinders> 12 </cylinders>
+  <idlerpm>      550.0 </idlerpm>
+  <maxrpm>      3200.0 </maxrpm>
+  <maxthrottle>    1.0 </maxthrottle>
+  <minthrottle>    0.1 </minthrottle>
+  <sparkfaildrop>  0.2 </sparkfaildrop>
+  <numboostspeeds> 1   </numboostspeeds>
+  <boostoverride>  0   </boostoverride>
+
+  <ratedboost1>    8.15</ratedboost1> <!-- 46.5 inHg -->
+  <ratedpower1> 1900   </ratedpower1>
+  <ratedrpm1>   2600   </ratedrpm1>
+  <ratedaltitude1> 4900 </ratedaltitude1>
+
+  <takeoffboost> 50.00    </takeoffboost>  
+
+</piston_engine>

@@ -15,13 +15,8 @@
          </tableData>
       </table>
       <output>fcs/steer-pos-deg[2]</output>
+      <output>/sim/multiplay/generic/float[2]</output>
      </scheduled_gain>
-
-   <pure_gain name="Copy">
-     <input>fcs/steer-pos-deg[2]</input>
-     <gain>-1</gain>
-     <output>sim/multiplay/generic/float[2]</output>
-   </pure_gain>
 
   </channel>
 
