@@ -5,8 +5,8 @@
   <inherits-from>/Effects/model-combined-deferred</inherits-from>
   <parameters>
 	<!-- Reflection -->
-	<reflection-enabled type="int">0</reflection-enabled>
-	<reflect-map-enabled type="int">0</reflect-map-enabled>
+	<reflection-enabled type="int">1</reflection-enabled>
+	<reflect-map-enabled type="int">1</reflect-map-enabled>
 	<reflection-dynamic type="int">1</reflection-dynamic>
 	<reflection-fresnel type="float">0.1</reflection-fresnel>
 	<reflection-rainbow type="float">0.05</reflection-rainbow>

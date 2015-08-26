@@ -193,6 +193,38 @@
     <object-name>WindscreenGlass</object-name>
   </animation>
 
+  <effect>
+    <inherits-from>Aircraft/PreciousMetal/Models/metal-reflect</inherits-from>
+    <condition>
+      <not><property>sim/rendering/rembrandt/enabled</property></not>
+    </condition>
+    <object-name>fuselage</object-name>
+    <object-name>RWing</object-name>
+    <object-name>LWing</object-name>
+    <object-name>HTail</object-name>
+    <object-name>VTail</object-name>
+    <object-name>RElevator</object-name>
+    <object-name>LElevator</object-name>
+    <object-name>Rudder</object-name>
+    <object-name>CanopyFrame</object-name>
+    <object-name>LTailWheelDoor</object-name>
+    <object-name>RTailWheelDoor</object-name>
+    <object-name>LMainGearStrut</object-name>
+    <object-name>RMainGearStrut</object-name>
+    <object-name>LAileron</object-name>
+    <object-name>RAileron</object-name>
+    <object-name>LFlap</object-name>
+    <object-name>RFlap</object-name>
+    <object-name>NoseScoop</object-name>
+    <object-name>Stacks</object-name>
+    <object-name>MainGearWellCover</object-name>
+    <object-name>LMainGearDoorInner</object-name>
+    <object-name>RMainGearDoorInner</object-name>
+    <object-name>LMainGearDoorOuter</object-name>
+    <object-name>RMainGearDoorOuter</object-name>
+  </effect>
+
+
 
 <!-- ******************** animations ********************-->
 
